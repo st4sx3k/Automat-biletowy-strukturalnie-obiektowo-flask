@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+a,
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a:hover,
+button:hover {
+    background: #444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+.ticket {
+    background: #f7f7f7;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
