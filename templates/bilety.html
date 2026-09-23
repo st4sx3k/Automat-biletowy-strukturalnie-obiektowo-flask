@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wybór biletu</title>
+</head>
+
+<body>
+
+<h1>Wybierz bilet</h1>
+
+{% for name, price in tickets.items() %}
+
+<form action="/dodaj" method="POST">
+
+    <input type="hidden"
+           name="discount"
+           value="{{ discount }}">
+
+    <input type="hidden"
+           name="ticket_type"
+           value="{{ ticket_type }}">
+
+    <input type="hidden"
+           name="name"
+           value="{{ name }}">
+
+    <h3>{{ name }}</h3>
+
+    <p>Cena: {{ "%.2f"|format(price) }} zł</p>
+
+    <label>Ilość:</label>
+
+    <input type="number"
+           name="quantity"
+           min="1"
+           max="9"
+           value="1">
+
+    <button type="submit">
+        Dodaj do koszyka
+    </button>
+
+</form>
+
+<hr>
+
+{% endfor %}
+
+<a href="/">← Powrót</a>
+
+</body>
+</html>

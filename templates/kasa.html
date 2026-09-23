@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kasa</title>
+</head>
+
+<body>
+
+<h1>🛒 KOSZYK</h1>
+
+{% if cart %}
+
+{% for item in cart %}
+
+<p>
+    {{ item.quantity }} x
+    {{ item.name }}
+    — {{ "%.2f"|format(item.price * item.quantity) }} zł
+</p>
+
+{% endfor %}
+
+<h2>
+    Razem: {{ "%.2f"|format(total) }} zł
+</h2>
+
+<a href="/wyczysc">
+    Wyczyść koszyk
+</a>
+
+{% else %}
+
+<p>Koszyk jest pusty.</p>
+
+{% endif %}
+
+<hr>
+
+<a href="/">← Powrót do automatu</a>
+
+</body>
+</html>

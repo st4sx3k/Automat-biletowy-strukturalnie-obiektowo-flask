@@ -1,0 +1,19 @@
+﻿discount;duration;name;price
+normalny;okresowy;polroczny;1000
+normalny;okresowy;miesieczny;200
+normalny;okresowy;tygodniowy;50
+normalny;okresowy;jednodniowy;15
+normalny;czasowy;60 - minutowy;6
+normalny;czasowy;30 - minutowy;4
+normalny;czasowy;10 - minutowy;2
+normalny;jednorazowy;miejski;5
+normalny;jednorazowy;aglomeracyjny;7
+ulgowy;okresowy;polroczny;500
+ulgowy;okresowy;miesieczny;100
+ulgowy;okresowy;tygodniowy;25
+ulgowy;okresowy;jednodniowy;7,5
+ulgowy;czasowy;60 - minutowy;3
+ulgowy;czasowy;30 - minutowy;2
+ulgowy;czasowy;10 - minutowy;1
+ulgowy;jednorazowy;miejski;2,5
+ulgowy;jednorazowy;aglomeracyjny;3,5
